@@ -6,7 +6,8 @@ metadata:
     name: mssql-service
     app: app
 spec:
-  type: NodePort
+  type: LoadBalancer
+  #type: NodePort
   ports:
     - port: 1433
       targetPort: 1433
