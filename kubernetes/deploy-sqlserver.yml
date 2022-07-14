@@ -5,7 +5,7 @@ metadata:
   labels:
     name: mssql-deploy
     app: app
-  spec:
+spec:
     replicas: 1
     selector:
       matchLabels:
@@ -15,8 +15,8 @@ metadata:
       metadata:
         name: mssql-pod
         labels:
-            app: app
-            name: mssql-pod
+          app: app
+          name: mssql-pod
       spec:
         containers:
           - name: mssql
@@ -27,4 +27,4 @@ metadata:
               - name: ACCEPT_EULA
                 value: "Y"
               - name: SA_PASSWORD
-                value: "123456"
+                value: "$kamilo2025."
